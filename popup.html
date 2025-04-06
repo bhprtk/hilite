@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Saved Highlights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="popup-body">
+
+
+        <div class="tab-container">
+            <button class="tab active" data-tab="0">
+                <img class="tab-icon" src="assets/highlights.svg" alt=""> Highlights
+            </button>
+            <button class="tab" data-tab="1">
+                <img class="tab-icon" src="assets/dashboard.svg" alt=""> Dashboard
+            </button>
+            <!-- <button class="tab" data-tab="2">
+                <img class="tab-icon" src="assets/settings.svg" alt=""> Settings
+            </button> -->
+        </div>
+
+
+        <div class="content-wrapper">
+            <div class="content-slider">
+                <div class="content">
+                    <h2 id="page-title" class="page-title"></h2>
+
+                    <header class="page-header">
+
+                        <div class="search-container">
+                            <img src="assets/search.svg" alt="" class="search-icon">
+                            <input type="text" id="search-input" class="search-input"
+                                placeholder="Search highlights...">
+                        </div>
+
+                        <button class="square-button" id="clear-button" title="Settings">
+                            <img src="assets/clear.svg" alt="">
+                        </button>
+                    </header>
+                    <div id="highlights-container"></div>
+                </div>
+                <div class="content">
+                    <h2 class="page-title">All Links</h2>
+                    <header class="page-header">
+                        <div class="search-container">
+                            <img src="assets/search.svg" alt="" class="search-icon">
+                            <input type="text" id="dashboard-search-input" class="search-input"
+                                placeholder="Search all links...">
+                        </div>
+                    </header>
+                    <div id="dashboard-container"></div>
+                </div>
+                <!-- <div class="content">
+                    <p>Content for Tab 3</p>
+                </div> -->
+            </div>
+        </div>
+
+
+
+        <script src="popup.js"></script>
+    </div>
+</body>
+
+</html>
